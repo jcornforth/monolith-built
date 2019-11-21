@@ -144,7 +144,7 @@
         <subsystem xmlns="urn:jboss:domain:bean-validation:1.0"/>
         <subsystem xmlns="urn:jboss:domain:datasources:5.0">
             <datasources>
-                <datasource jta="true" jndi-name="java:jboss/datasources/${env.DB_NAME}" pool-name="ExampleDS" enabled="true" use-java-context="true" statistics-enabled="false">
+                <datasource jta="true" jndi-name="java:jboss/datasources/${env.DB_NAME}" pool-name="${env.DB_NAME}" enabled="true" use-java-context="true" statistics-enabled="false">
                 	<connection-url>${env.DB_URL}</connection-url>
                 	<driver>mysql</driver>
                 	<security>
